@@ -292,6 +292,13 @@ export default {
   visibility: visible;
 }
 
+.products-main__button_disable {
+  color: rgba(39, 39, 39, 0.50);
+  background: transparent;
+  border: 2px solid rgba(151, 151, 151, 0.30);
+  pointer-events: none;
+}
+
 @media screen and (min-width: 650px) {
 	.products__body {
 		flex-direction: row;
