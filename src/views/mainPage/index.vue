@@ -1,10 +1,10 @@
 <template>
   <div class="main">
+    <Loader
+      v-if="categoryLoad"
+      desc="Категории загружаются..."
+    />
     <div class="main__container">
-      <Loader
-        v-if="categoryLoad"
-        desc="Категории загружаются..."
-      />
       <h1 class="main__title">
         Категории товаров
       </h1>
@@ -108,6 +108,16 @@ export default {
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 @media screen and (min-width: 650px) {

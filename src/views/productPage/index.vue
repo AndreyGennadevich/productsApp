@@ -299,6 +299,16 @@ export default {
   pointer-events: none;
 }
 
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
 @media screen and (min-width: 650px) {
 	.products__body {
 		flex-direction: row;
